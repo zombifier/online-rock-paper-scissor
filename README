@@ -1,0 +1,4 @@
+Consists of 2 parts:
+- The central server that communicates using Socket.IO
+- The ReactJS client
+TODO: Handling disconnections, scoreboard?
