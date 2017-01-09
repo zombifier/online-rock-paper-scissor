@@ -49,8 +49,8 @@ function play() {
         socket2 = playerQueue.dequeue();
         socket1.emit('play');
         socket2.emit('play');
-        socket1.on('played', (data) => handle(data, 1));
-        socket2.on('played', (data) => handle(data, 2));
+        socket1.once('played', (data) => handle(data, 1));
+        socket2.once('played', (data) => handle(data, 2));
         
     }
 }

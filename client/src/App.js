@@ -23,10 +23,16 @@ class RPSButtons extends Component {
     }
     render() {
         return (
-                <div id="buttons">
-                <button onClick={this.clickRock}>Rock</button>
-                <button onClick={this.clickPaper}>Paper</button>
-                <button onClick={this.clickScissor}>Scissor</button>
+                <div className="row" id="buttons">
+                <div className="col-md-4 col-sm-12">
+                <button className="btn btn-default btn-lg btn-block" onClick={this.clickRock}>Rock</button>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                <button className="btn btn-default btn-lg btn-block" onClick={this.clickPaper}>Paper</button>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                <button className="btn btn-default btn-lg btn-block" onClick={this.clickScissor}>Scissor</button>
+                </div>
                 </div>
                )
 
